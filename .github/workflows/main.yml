@@ -12,6 +12,9 @@ jobs:
       - uses: actions/setup-node@v3
       - run: npm ci
       - run: npm run build
+      - uses: actions/upload-artifact@v3
+        name: build-artifact
+        path: build
 
   lint:
     runs-on: "ubuntu-latest"
@@ -25,8 +28,9 @@ jobs:
     needs: [build, lint]
     runs-on: "ubuntu-latest"
     steps:
-      - uses: actions/checkout@v3
-      - run: ls
+      - uses: actions/download-artifact@v3
+        name: build-artifact
+        path: build
       - uses: sebastianpopp/ftp-action@releases/v2
         with:
           host: ftp.gavinmccabe.com
