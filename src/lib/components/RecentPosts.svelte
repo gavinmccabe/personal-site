@@ -7,11 +7,13 @@
 </script>
 
 <div id="bg">
-	<h1>Latest Updates</h1>
-	<div id="container">
-		{#each posts as post}
-			<PostCard {post} />
-		{/each}
+	<div id="col">
+		<h1>Latest Updates</h1>
+		<div class="container">
+			{#each posts as post}
+				<PostCard {post} />
+			{/each}
+		</div>
 	</div>
 </div>
 
@@ -20,21 +22,22 @@
 		width: 100%;
 		background-color: #edf7fa;
 		margin: 0;
-	}
-
-	#container {
 		display: flex;
 		justify-content: center;
+	}
+
+	#col {
 		margin: 0 10%;
 	}
 
+	.container {
+		display: flex;
+		justify-content: center;
+	}
+
 	h1 {
-		position: relative;
-		left: calc(10% + 0.1 * (80%) + 10px);
-		margin-top: 20px;
-		margin-bottom: 0px;
-		display: inline-block;
 		font-weight: 400;
 		font-size: 22px;
+		margin: 20px 0;
 	}
 </style>

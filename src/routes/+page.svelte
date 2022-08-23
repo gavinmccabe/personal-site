@@ -4,6 +4,7 @@
 	import IntroSplash from "$lib/components/IntroSplash.svelte";
 	import Navbar from "$lib/components/Navbar.svelte";
 	import RecentPosts from "$lib/components/RecentPosts.svelte";
+	import Footer from "$lib/components/Footer.svelte";
 
 	let posts: Post[] = [
 		{
@@ -23,4 +24,5 @@
 
 <Navbar />
 <IntroSplash />
-<RecentPosts {posts} />x
+<RecentPosts {posts} />
+<Footer />
