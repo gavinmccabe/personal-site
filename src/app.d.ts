@@ -9,8 +9,8 @@ declare namespace App {
 }
 
 interface Post {
-	title: string,
-	date: string,
-	tags: string,
-	text: string,
+	title: string;
+	date: string;
+	tags: string;
+	text: string;
 }

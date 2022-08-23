@@ -16,8 +16,7 @@
 			tags: "Career, Internship",
 			text: "Today I begin my internship at the AWS Center for Quantum Computing (CQC).  I am excited to be joining such a talented, diverse team of scientists, software engineers, managers, and engineers!"
 		}
-	]
-
+	];
 </script>
 
 <Navbar />
