@@ -1,6 +1,6 @@
 name: CI/CD
 on: push
-  braches: ["main"]
+  braches: [ "main" ]
 
 jobs:
   build:
