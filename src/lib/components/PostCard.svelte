@@ -19,7 +19,6 @@
 		height: 30%;
 		margin-bottom: 20px;
 		margin-right: 20px;
-		
 	}
 
 	h1 {
