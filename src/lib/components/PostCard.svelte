@@ -1,4 +1,5 @@
 <script lang="ts">
+	import type { Post } from "$lib/types";
 	export let post: Post;
 </script>
 

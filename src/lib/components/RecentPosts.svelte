@@ -1,5 +1,8 @@
 <script lang="ts">
+	import type { Post } from "$lib/types";
+
 	import PostCard from "./PostCard.svelte";
+
 	export let posts: Post[];
 </script>
 

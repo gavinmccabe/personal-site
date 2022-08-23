@@ -1,4 +1,6 @@
 <script lang="ts">
+	import type { Post } from "$lib/types";
+
 	import IntroSplash from "$lib/components/IntroSplash.svelte";
 	import Navbar from "$lib/components/Navbar.svelte";
 	import RecentPosts from "$lib/components/RecentPosts.svelte";

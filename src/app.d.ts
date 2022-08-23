@@ -7,10 +7,3 @@ declare namespace App {
 	// interface PrivateEnv {}
 	// interface PublicEnv {}
 }
-
-interface Post {
-	title: string;
-	date: string;
-	tags: string;
-	text: string;
-}
