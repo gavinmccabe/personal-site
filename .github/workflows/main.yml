@@ -39,4 +39,4 @@ jobs:
           user: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           localDir: build
-          remoteDir: public_html/beta
+          remoteDir: staging.gavinmccabe.com
