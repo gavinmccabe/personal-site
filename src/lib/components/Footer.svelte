@@ -29,6 +29,7 @@
 	div {
 		display: flex;
 		justify-content: center;
+		color: #21243d;
 	}
 
 	a {

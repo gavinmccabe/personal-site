@@ -4,3 +4,10 @@ export interface Post {
 	tags: string;
 	text: string;
 }
+
+export interface Experience {
+	title: string;
+	company: string;
+	dates: string;
+	description: string;
+}
