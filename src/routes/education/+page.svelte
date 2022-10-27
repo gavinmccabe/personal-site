@@ -27,7 +27,7 @@
 	];
 </script>
 
-<Navbar page={Page.Education}/>
+<Navbar page={Page.Education} />
 <main>
 	<h1>Education</h1>
 	{#each education as e}

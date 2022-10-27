@@ -22,6 +22,6 @@
 	];
 </script>
 
-<Navbar page={Page.Home}/>
+<Navbar page={Page.Home} />
 <IntroSplash />
 <RecentPosts {posts} />

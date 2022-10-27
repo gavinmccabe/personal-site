@@ -25,7 +25,8 @@
 		color: #8695a4;
 	}
 
-	div, h2 {
+	div,
+	h2 {
 		display: inline;
 	}
 
