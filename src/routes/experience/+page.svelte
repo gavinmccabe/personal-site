@@ -1,24 +1,17 @@
 <script lang="ts">
 	import type { Experience } from "$lib/types";
+	import { Page } from "$lib/types";
 
-	import Footer from "$lib/components/Footer.svelte";
-	import Navbar from "$lib/components/Navbar.svelte";
 	import ExperienceItem from "$lib/components/ExperienceItem.svelte";
+	import Navbar from "$lib/components/Navbar.svelte";
 
 	let experiences: Experience[] = [
 		{
-			title: "Software Development Engineering Intern - Quantum",
-			company: "AWS Center for Quantum Computing",
-			dates: "June 2023 - Present",
+			title: "Head Cooking Class Assistant",
+			company: "Caltech",
+			dates: "September 2022 - Present",
 			description:
-				"Software engineering intern on the control stack team supporting AWS's efforts to build an error-correcting quantum computer."
-		},
-		{
-			title: "Chief Technology Officer",
-			company: "MG Venture, LLC.",
-			dates: "October 2020 - Present",
-			description:
-				"Supports a software team overseeing the development of the Hangr iOS application.  Served as a bridge between technical engineers and other business-focused employees to oversee a beta rollout to over 15 locations nationwide."
+				"Assist instructors in running the Caltech cooking class (SA 16a).  Responsibilities include coordinating class logistics, helping students in the kitchen, and providing demos and feedback on techniques."
 		},
 		{
 			title: "Technical Consultant",
@@ -26,6 +19,20 @@
 			dates: "September 2021 - Present",
 			description:
 				"Provide subject-matter expertise and training support to U.S. government and private industry training programs, requiring demonstrated proficiency, while operating in both classroom and field training environments."
+		},
+		{
+			title: "Software Development Engineering Intern - Quantum",
+			company: "AWS Center for Quantum Computing",
+			dates: "June 2022 - September 2022",
+			description:
+				"Software engineering intern on the control stack team supporting AWS's efforts to build an error-correcting quantum computer."
+		},
+		{
+			title: "Chief Technology Officer",
+			company: "MG Venture, LLC.",
+			dates: "October 2020 - October 2022",
+			description:
+				"Supports a software team overseeing the development of the Hangr iOS application.  Served as a bridge between technical engineers and other business-focused employees to oversee a beta rollout to over 15 locations nationwide."
 		},
 		{
 			title: "Head Teaching Assistant - Web Development (CS 132)",
@@ -65,14 +72,13 @@
 	];
 </script>
 
-<Navbar />
+<Navbar page={Page.Experience} />
 <main>
 	<h1>Experience</h1>
 	{#each experiences as experience}
 		<ExperienceItem {experience} />
 	{/each}
 </main>
-<Footer />
 
 <style>
 	main {
@@ -82,7 +88,7 @@
 
 	h1 {
 		font-size: 44px;
-		font-weight: 700;
+		font-weight: 900;
 		margin-top: 85px;
 		margin-bottom: 50px;
 	}

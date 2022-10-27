@@ -1,10 +1,10 @@
 <script lang="ts">
 	import type { Post } from "$lib/types";
+	import { Page } from "$lib/types";
 
 	import IntroSplash from "$lib/components/IntroSplash.svelte";
-	import Navbar from "$lib/components/Navbar.svelte";
 	import RecentPosts from "$lib/components/RecentPosts.svelte";
-	import Footer from "$lib/components/Footer.svelte";
+	import Navbar from "$lib/components/Navbar.svelte";
 
 	let posts: Post[] = [
 		{
@@ -22,7 +22,6 @@
 	];
 </script>
 
-<Navbar />
+<Navbar page={Page.Home}/>
 <IntroSplash />
 <RecentPosts {posts} />
-<Footer />

@@ -1,8 +1,14 @@
+<script lang="ts">
+	import { Page } from "$lib/types";
+	
+	export let page: Page;
+</script>
+
 <ul>
 	<li><a href="/">Home</a></li>
-	<li><a href="/experience">Experience</a></li>
-	<li><a href="/">Education</a></li>
-	<li><a href="/">Contact</a></li>
+	<li><a class:selected="{page == Page.Experience}" href="/experience">Experience</a></li>
+	<li><a class:selected="{page == Page.Education}" href="/education">Education</a></li>
+	<li><a class:selected="{page == Page.Contact}" href="/">Contact</a></li>
 </ul>
 
 <style>
@@ -28,4 +34,10 @@
 	a:visited {
 		color: inherit;
 	}
+
+	.selected {
+		color: #ff6464 !important;
+	}
+
+	
 </style>

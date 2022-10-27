@@ -11,3 +11,17 @@ export interface Experience {
 	dates: string;
 	description: string;
 }
+
+export interface Education {
+	school: string;
+	degree: string;
+	class: number;
+	description: string;
+}
+
+export enum Page {
+	Home,
+	Experience,
+	Education,
+	Contact
+}

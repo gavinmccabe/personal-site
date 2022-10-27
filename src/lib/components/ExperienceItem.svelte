@@ -5,7 +5,7 @@
 </script>
 
 <h1>{experience.title}</h1>
-<div id="sameLine">
+<div>
 	<h2>{experience.dates}</h2>
 	<p>|</p>
 	<h2 id="company">{experience.company}</h2>
@@ -16,7 +16,7 @@
 <style>
 	h1 {
 		font-size: 30px;
-		font-weight: 500;
+		font-weight: 700;
 		margin-bottom: 15px;
 	}
 
