@@ -8,6 +8,12 @@
 
 	let posts: Post[] = [
 		{
+			title: "Accepted full-time offer at AWS CQC",
+			date: "19 Sep 2022",
+			tags: "Career, Graduation",
+			text: "After completing a 13-week internship at the AWS Center for Quantum Computing (CQC) this summer, I was invited to return to the CQC as a full-time quantum software engineer following my graduation in June 2023.  I've enthusiastically accepted this offer and look forward to beginning my career at AWS in August!"
+		},
+		{
 			title: "Launching my new website",
 			date: "24 Aug 2022",
 			tags: "Website Design, Development",
@@ -24,4 +30,4 @@
 
 <Navbar page={Page.Home} />
 <IntroSplash />
-<RecentPosts {posts} />
+<RecentPosts posts={posts.slice(0, 2)} />

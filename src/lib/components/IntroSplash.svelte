@@ -13,7 +13,7 @@
 			I use the tools of today to create the technology of tomorrow. Caltech-educated physicist and
 			self-taught software engineer, I help bridge the gaps between classical and quantum computing.
 		</p>
-		<Button>Download Resume</Button>
+		<Button link="/CV.pdf">Download Resume</Button>
 	</div>
 	<div class="col" id="profileDiv">
 		<ProfilePic />
