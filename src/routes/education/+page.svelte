@@ -10,13 +10,15 @@
 			school: "Caltech",
 			degree: "B.S. Physics",
 			class: 2023,
-			description: "Test test test"
+			description:
+				"Enrolled in a bachelor's of science program in physics.  Course content heavily concentrated in quantum computation and semiconductor physics.  Completed extensive coursework in computer science."
 		},
 		{
 			school: "The Governor's School for Science and Technology",
 			degree: "Engineering Strand",
 			class: 2019,
-			description: ""
+			description:
+				"Attended a half-day program during my junior and senior years of high school which provided advanced STEM education.  Classes taken include calculus-based physics I-IV as well as research fundamentals, multivariable calculus, and linear algebra."
 		},
 		{
 			school: "York High School",
