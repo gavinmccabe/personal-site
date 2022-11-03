@@ -1,9 +1,13 @@
-<button>
+<script lang="ts">
+	export let link: string;
+</script>
+
+<a href={link} target="_blank">
 	<slot />
-</button>
+</a>
 
 <style>
-	button {
+	a {
 		padding: 16px 22px;
 		font-size: 18px;
 		font-weight: 500;
@@ -12,5 +16,6 @@
 		border: 0;
 		border-radius: 2px;
 		background-color: #ff6464;
+		text-decoration: none;
 	}
 </style>
