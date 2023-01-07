@@ -7,11 +7,18 @@
 
 	let experiences: Experience[] = [
 		{
+			title: "Teaching Assistant - Relational Databases (CS 121)",
+			company: "Caltech",
+			dates: "January 2023 - Present",
+			description:
+				"Assist professor with course logistics, grading assignments, provide detailed feedback to students, and offering office hours for additional support."
+		},
+		{
 			title: "Head Cooking Class Assistant",
 			company: "Caltech",
 			dates: "September 2022 - Present",
 			description:
-				"Assist instructors in running the Caltech cooking class (SA 16a).  Responsibilities include coordinating class logistics, helping students in the kitchen, and providing demos and feedback on techniques."
+				"Assist instructors in running the Caltech cooking class (SA 16).  Responsibilities include coordinating class logistics, helping students in the kitchen, and providing demos and feedback on various techniques."
 		},
 		{
 			title: "Technical Consultant",
